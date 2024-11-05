@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { GoogleCloudStorageConfig } from "svix";
+//import { GoogleCloudStorageConfig } from "svix";
 
 const userSchema = new mongoose.Schema({
     clerkId : {type:String,required:true,unique:true},
@@ -11,6 +11,6 @@ const userSchema = new mongoose.Schema({
 
 })
 
-const userModel = mongoose.models.user || mongoose.model("user",userSchema)
+const usersModel = mongoose.models.user || mongoose.model("user",userSchema)
 
-export default userModel;
+export default usersModel;
